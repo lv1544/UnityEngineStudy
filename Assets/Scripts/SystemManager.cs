@@ -4,7 +4,7 @@ public class SystemManager : MonoBehaviour
 {
    static SystemManager instance = null;
 
-   public SystemManager Instace
+   public static SystemManager Instance
    {
       get
       {
@@ -23,6 +23,17 @@ public class SystemManager : MonoBehaviour
 
       instance = this;
 
+   }
+
+   [SerializeField]
+   Player player;
+
+   public Player Hero
+   {
+      get
+      {
+         return player;
+      }
    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
