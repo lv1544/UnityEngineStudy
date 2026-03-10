@@ -34,4 +34,37 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
+    void UpdateSpeed()
+    {
+        
+    }
+
+    void UpdateMove()
+    {
+        
+    }
+
+    void Arrived()
+    {
+        
+    }
+
+    public void Apear(Vector3 targetPos)
+    {
+        TargetPosition = targetPos;
+        CurrentSpeed = MaxSpeed;
+        CurrentState = State.Appear;
+    }
+
+    public void Disappear(Vector3 targetPos)
+    {
+        TargetPosition = targetPos;
+        CurrentSpeed = MaxSpeed; 
+        CurrentState = State.Disappear;
+
+    }
+    
+    
+    
 }
