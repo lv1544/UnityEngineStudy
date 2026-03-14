@@ -580,6 +580,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1396341089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &380858586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3716191533885506553, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
+  m_PrefabInstance: {fileID: 8122777912517875395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438194520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8769342449672979909, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 16.65
       objectReference: {fileID: 0}
     - target: {fileID: 8769342449672979909, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1584,13 +1589,31 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8769342449672979909, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 235924862}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3716191533885506553, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8122777912517875397}
   m_SourcePrefab: {fileID: 100100000, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
 --- !u!4 &8122777912517875396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8769342449672979909, guid: 5835708c2f64323498aa0d9132c3b54c, type: 3}
   m_PrefabInstance: {fileID: 8122777912517875395}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8122777912517875397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380858586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9c8560d903b464a94a299f805e4091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  CurrentState: -1
+  TargetPosition: {x: 0, y: 0, z: 0}
+  CurrentSpeed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
